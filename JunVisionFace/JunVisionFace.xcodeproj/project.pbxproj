@@ -1,0 +1,716 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4702D95E1FC555DD00A9FD11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702D95D1FC555DD00A9FD11 /* AppDelegate.swift */; };
+		4702D9601FC555DD00A9FD11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702D95F1FC555DD00A9FD11 /* ViewController.swift */; };
+		4702D9631FC555DD00A9FD11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4702D9611FC555DD00A9FD11 /* Main.storyboard */; };
+		4702D9661FC555DD00A9FD11 /* JunVisionFace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4702D9641FC555DD00A9FD11 /* JunVisionFace.xcdatamodeld */; };
+		4702D9681FC555DD00A9FD11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4702D9671FC555DD00A9FD11 /* Assets.xcassets */; };
+		4702D96B1FC555DD00A9FD11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4702D9691FC555DD00A9FD11 /* LaunchScreen.storyboard */; };
+		4702D9761FC555DD00A9FD11 /* JunVisionFaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702D9751FC555DD00A9FD11 /* JunVisionFaceTests.swift */; };
+		4702D9811FC555DD00A9FD11 /* JunVisionFaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702D9801FC555DD00A9FD11 /* JunVisionFaceUITests.swift */; };
+		4702D99A1FC69C9500A9FD11 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702D9981FC69C9500A9FD11 /* TextViewController.swift */; };
+		4702D99E1FC69CB200A9FD11 /* FeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702D99C1FC69CB200A9FD11 /* FeatureViewController.swift */; };
+		4702D9A21FC69CD300A9FD11 /* RectangleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702D9A01FC69CD300A9FD11 /* RectangleViewController.swift */; };
+		4702D9A61FC69CFB00A9FD11 /* StaticFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702D9A41FC69CFB00A9FD11 /* StaticFaceViewController.swift */; };
+		4702D9AA1FC69D2200A9FD11 /* DynamicFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702D9A81FC69D2200A9FD11 /* DynamicFaceViewController.swift */; };
+		4702D9AB1FC69D2200A9FD11 /* DynamicFaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4702D9A91FC69D2200A9FD11 /* DynamicFaceViewController.xib */; };
+		4702D9AE1FC69D5800A9FD11 /* RealAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702D9AC1FC69D5800A9FD11 /* RealAddViewController.swift */; };
+		4702D9AF1FC69D5800A9FD11 /* RealAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4702D9AD1FC69D5800A9FD11 /* RealAddViewController.xib */; };
+		4702D9B41FC6A40F00A9FD11 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702D9B31FC6A40F00A9FD11 /* BaseViewController.swift */; };
+		4702D9B61FC6AD1900A9FD11 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702D9B51FC6AD1900A9FD11 /* UIExtension.swift */; };
+		47EDDF921FC7C1C20080EA4B /* JunVisionTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDDF911FC7C1C20080EA4B /* JunVisionTool.swift */; };
+		47EDDF941FC906BF0080EA4B /* FaceFeatureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDDF931FC906BF0080EA4B /* FaceFeatureModel.swift */; };
+		47EDDF961FC911E90080EA4B /* JunViewTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDDF951FC911E90080EA4B /* JunViewTool.swift */; };
+		47EDDF981FC95BA90080EA4B /* FaceFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDDF971FC95BA90080EA4B /* FaceFeatureView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4702D9721FC555DD00A9FD11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4702D9521FC555DC00A9FD11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4702D9591FC555DD00A9FD11;
+			remoteInfo = JunVisionFace;
+		};
+		4702D97D1FC555DD00A9FD11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4702D9521FC555DC00A9FD11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4702D9591FC555DD00A9FD11;
+			remoteInfo = JunVisionFace;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4702D95A1FC555DD00A9FD11 /* JunVisionFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JunVisionFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4702D95D1FC555DD00A9FD11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4702D95F1FC555DD00A9FD11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4702D9621FC555DD00A9FD11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4702D9651FC555DD00A9FD11 /* JunVisionFace.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JunVisionFace.xcdatamodel; sourceTree = "<group>"; };
+		4702D9671FC555DD00A9FD11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4702D96A1FC555DD00A9FD11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4702D96C1FC555DD00A9FD11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4702D9711FC555DD00A9FD11 /* JunVisionFaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JunVisionFaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4702D9751FC555DD00A9FD11 /* JunVisionFaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JunVisionFaceTests.swift; sourceTree = "<group>"; };
+		4702D9771FC555DD00A9FD11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4702D97C1FC555DD00A9FD11 /* JunVisionFaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JunVisionFaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4702D9801FC555DD00A9FD11 /* JunVisionFaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JunVisionFaceUITests.swift; sourceTree = "<group>"; };
+		4702D9821FC555DD00A9FD11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4702D9911FC696F000A9FD11 /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
+		4702D9981FC69C9500A9FD11 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		4702D99C1FC69CB200A9FD11 /* FeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureViewController.swift; sourceTree = "<group>"; };
+		4702D9A01FC69CD300A9FD11 /* RectangleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleViewController.swift; sourceTree = "<group>"; };
+		4702D9A41FC69CFB00A9FD11 /* StaticFaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFaceViewController.swift; sourceTree = "<group>"; };
+		4702D9A81FC69D2200A9FD11 /* DynamicFaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFaceViewController.swift; sourceTree = "<group>"; };
+		4702D9A91FC69D2200A9FD11 /* DynamicFaceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicFaceViewController.xib; sourceTree = "<group>"; };
+		4702D9AC1FC69D5800A9FD11 /* RealAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealAddViewController.swift; sourceTree = "<group>"; };
+		4702D9AD1FC69D5800A9FD11 /* RealAddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealAddViewController.xib; sourceTree = "<group>"; };
+		4702D9B31FC6A40F00A9FD11 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4702D9B51FC6AD1900A9FD11 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		47EDDF911FC7C1C20080EA4B /* JunVisionTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JunVisionTool.swift; sourceTree = "<group>"; };
+		47EDDF931FC906BF0080EA4B /* FaceFeatureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceFeatureModel.swift; sourceTree = "<group>"; };
+		47EDDF951FC911E90080EA4B /* JunViewTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JunViewTool.swift; sourceTree = "<group>"; };
+		47EDDF971FC95BA90080EA4B /* FaceFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceFeatureView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4702D9571FC555DD00A9FD11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4702D96E1FC555DD00A9FD11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4702D9791FC555DD00A9FD11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4702D9511FC555DC00A9FD11 = {
+			isa = PBXGroup;
+			children = (
+				4702D95C1FC555DD00A9FD11 /* JunVisionFace */,
+				4702D9741FC555DD00A9FD11 /* JunVisionFaceTests */,
+				4702D97F1FC555DD00A9FD11 /* JunVisionFaceUITests */,
+				4702D95B1FC555DD00A9FD11 /* Products */,
+				4702D9901FC696EF00A9FD11 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4702D95B1FC555DD00A9FD11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4702D95A1FC555DD00A9FD11 /* JunVisionFace.app */,
+				4702D9711FC555DD00A9FD11 /* JunVisionFaceTests.xctest */,
+				4702D97C1FC555DD00A9FD11 /* JunVisionFaceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4702D95C1FC555DD00A9FD11 /* JunVisionFace */ = {
+			isa = PBXGroup;
+			children = (
+				4702D9B01FC6A40200A9FD11 /* VisionTool */,
+				4702D9931FC69C6F00A9FD11 /* 动态人脸识别 */,
+				4702D9941FC69C6F00A9FD11 /* 静态人脸识别 */,
+				4702D9951FC69C6F00A9FD11 /* 矩形识别 */,
+				4702D9961FC69C6F00A9FD11 /* 实时动态添加 */,
+				4702D9971FC69C6F00A9FD11 /* 特征识别 */,
+				4702D9921FC69C6F00A9FD11 /* 文字识别 */,
+				4702D95D1FC555DD00A9FD11 /* AppDelegate.swift */,
+				4702D95F1FC555DD00A9FD11 /* ViewController.swift */,
+				4702D9611FC555DD00A9FD11 /* Main.storyboard */,
+				4702D9671FC555DD00A9FD11 /* Assets.xcassets */,
+				4702D9691FC555DD00A9FD11 /* LaunchScreen.storyboard */,
+				4702D96C1FC555DD00A9FD11 /* Info.plist */,
+				4702D9641FC555DD00A9FD11 /* JunVisionFace.xcdatamodeld */,
+			);
+			path = JunVisionFace;
+			sourceTree = "<group>";
+		};
+		4702D9741FC555DD00A9FD11 /* JunVisionFaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				4702D9751FC555DD00A9FD11 /* JunVisionFaceTests.swift */,
+				4702D9771FC555DD00A9FD11 /* Info.plist */,
+			);
+			path = JunVisionFaceTests;
+			sourceTree = "<group>";
+		};
+		4702D97F1FC555DD00A9FD11 /* JunVisionFaceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4702D9801FC555DD00A9FD11 /* JunVisionFaceUITests.swift */,
+				4702D9821FC555DD00A9FD11 /* Info.plist */,
+			);
+			path = JunVisionFaceUITests;
+			sourceTree = "<group>";
+		};
+		4702D9901FC696EF00A9FD11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4702D9911FC696F000A9FD11 /* Vision.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4702D9921FC69C6F00A9FD11 /* 文字识别 */ = {
+			isa = PBXGroup;
+			children = (
+				4702D9981FC69C9500A9FD11 /* TextViewController.swift */,
+			);
+			path = "文字识别";
+			sourceTree = "<group>";
+		};
+		4702D9931FC69C6F00A9FD11 /* 动态人脸识别 */ = {
+			isa = PBXGroup;
+			children = (
+				4702D9A81FC69D2200A9FD11 /* DynamicFaceViewController.swift */,
+				4702D9A91FC69D2200A9FD11 /* DynamicFaceViewController.xib */,
+			);
+			path = "动态人脸识别";
+			sourceTree = "<group>";
+		};
+		4702D9941FC69C6F00A9FD11 /* 静态人脸识别 */ = {
+			isa = PBXGroup;
+			children = (
+				4702D9A41FC69CFB00A9FD11 /* StaticFaceViewController.swift */,
+			);
+			path = "静态人脸识别";
+			sourceTree = "<group>";
+		};
+		4702D9951FC69C6F00A9FD11 /* 矩形识别 */ = {
+			isa = PBXGroup;
+			children = (
+				4702D9A01FC69CD300A9FD11 /* RectangleViewController.swift */,
+			);
+			path = "矩形识别";
+			sourceTree = "<group>";
+		};
+		4702D9961FC69C6F00A9FD11 /* 实时动态添加 */ = {
+			isa = PBXGroup;
+			children = (
+				4702D9AC1FC69D5800A9FD11 /* RealAddViewController.swift */,
+				4702D9AD1FC69D5800A9FD11 /* RealAddViewController.xib */,
+			);
+			path = "实时动态添加";
+			sourceTree = "<group>";
+		};
+		4702D9971FC69C6F00A9FD11 /* 特征识别 */ = {
+			isa = PBXGroup;
+			children = (
+				4702D99C1FC69CB200A9FD11 /* FeatureViewController.swift */,
+				47EDDF931FC906BF0080EA4B /* FaceFeatureModel.swift */,
+				47EDDF971FC95BA90080EA4B /* FaceFeatureView.swift */,
+			);
+			path = "特征识别";
+			sourceTree = "<group>";
+		};
+		4702D9B01FC6A40200A9FD11 /* VisionTool */ = {
+			isa = PBXGroup;
+			children = (
+				4702D9B11FC6A40200A9FD11 /* BaseVIewController */,
+				4702D9B21FC6A40200A9FD11 /* Tools */,
+			);
+			path = VisionTool;
+			sourceTree = "<group>";
+		};
+		4702D9B11FC6A40200A9FD11 /* BaseVIewController */ = {
+			isa = PBXGroup;
+			children = (
+				4702D9B31FC6A40F00A9FD11 /* BaseViewController.swift */,
+			);
+			path = BaseVIewController;
+			sourceTree = "<group>";
+		};
+		4702D9B21FC6A40200A9FD11 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				4702D9B51FC6AD1900A9FD11 /* UIExtension.swift */,
+				47EDDF911FC7C1C20080EA4B /* JunVisionTool.swift */,
+				47EDDF951FC911E90080EA4B /* JunViewTool.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4702D9591FC555DD00A9FD11 /* JunVisionFace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4702D9851FC555DD00A9FD11 /* Build configuration list for PBXNativeTarget "JunVisionFace" */;
+			buildPhases = (
+				4702D9561FC555DD00A9FD11 /* Sources */,
+				4702D9571FC555DD00A9FD11 /* Frameworks */,
+				4702D9581FC555DD00A9FD11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JunVisionFace;
+			productName = JunVisionFace;
+			productReference = 4702D95A1FC555DD00A9FD11 /* JunVisionFace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4702D9701FC555DD00A9FD11 /* JunVisionFaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4702D9881FC555DD00A9FD11 /* Build configuration list for PBXNativeTarget "JunVisionFaceTests" */;
+			buildPhases = (
+				4702D96D1FC555DD00A9FD11 /* Sources */,
+				4702D96E1FC555DD00A9FD11 /* Frameworks */,
+				4702D96F1FC555DD00A9FD11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4702D9731FC555DD00A9FD11 /* PBXTargetDependency */,
+			);
+			name = JunVisionFaceTests;
+			productName = JunVisionFaceTests;
+			productReference = 4702D9711FC555DD00A9FD11 /* JunVisionFaceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4702D97B1FC555DD00A9FD11 /* JunVisionFaceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4702D98B1FC555DD00A9FD11 /* Build configuration list for PBXNativeTarget "JunVisionFaceUITests" */;
+			buildPhases = (
+				4702D9781FC555DD00A9FD11 /* Sources */,
+				4702D9791FC555DD00A9FD11 /* Frameworks */,
+				4702D97A1FC555DD00A9FD11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4702D97E1FC555DD00A9FD11 /* PBXTargetDependency */,
+			);
+			name = JunVisionFaceUITests;
+			productName = JunVisionFaceUITests;
+			productReference = 4702D97C1FC555DD00A9FD11 /* JunVisionFaceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4702D9521FC555DC00A9FD11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = CoderJun;
+				TargetAttributes = {
+					4702D9591FC555DD00A9FD11 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					4702D9701FC555DD00A9FD11 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4702D9591FC555DD00A9FD11;
+					};
+					4702D97B1FC555DD00A9FD11 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4702D9591FC555DD00A9FD11;
+					};
+				};
+			};
+			buildConfigurationList = 4702D9551FC555DC00A9FD11 /* Build configuration list for PBXProject "JunVisionFace" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4702D9511FC555DC00A9FD11;
+			productRefGroup = 4702D95B1FC555DD00A9FD11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4702D9591FC555DD00A9FD11 /* JunVisionFace */,
+				4702D9701FC555DD00A9FD11 /* JunVisionFaceTests */,
+				4702D97B1FC555DD00A9FD11 /* JunVisionFaceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4702D9581FC555DD00A9FD11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4702D9AB1FC69D2200A9FD11 /* DynamicFaceViewController.xib in Resources */,
+				4702D9AF1FC69D5800A9FD11 /* RealAddViewController.xib in Resources */,
+				4702D96B1FC555DD00A9FD11 /* LaunchScreen.storyboard in Resources */,
+				4702D9681FC555DD00A9FD11 /* Assets.xcassets in Resources */,
+				4702D9631FC555DD00A9FD11 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4702D96F1FC555DD00A9FD11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4702D97A1FC555DD00A9FD11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4702D9561FC555DD00A9FD11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4702D9661FC555DD00A9FD11 /* JunVisionFace.xcdatamodeld in Sources */,
+				4702D9601FC555DD00A9FD11 /* ViewController.swift in Sources */,
+				4702D9AE1FC69D5800A9FD11 /* RealAddViewController.swift in Sources */,
+				4702D99E1FC69CB200A9FD11 /* FeatureViewController.swift in Sources */,
+				4702D95E1FC555DD00A9FD11 /* AppDelegate.swift in Sources */,
+				47EDDF921FC7C1C20080EA4B /* JunVisionTool.swift in Sources */,
+				4702D9B41FC6A40F00A9FD11 /* BaseViewController.swift in Sources */,
+				4702D9A21FC69CD300A9FD11 /* RectangleViewController.swift in Sources */,
+				47EDDF981FC95BA90080EA4B /* FaceFeatureView.swift in Sources */,
+				4702D9AA1FC69D2200A9FD11 /* DynamicFaceViewController.swift in Sources */,
+				4702D99A1FC69C9500A9FD11 /* TextViewController.swift in Sources */,
+				47EDDF961FC911E90080EA4B /* JunViewTool.swift in Sources */,
+				4702D9B61FC6AD1900A9FD11 /* UIExtension.swift in Sources */,
+				47EDDF941FC906BF0080EA4B /* FaceFeatureModel.swift in Sources */,
+				4702D9A61FC69CFB00A9FD11 /* StaticFaceViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4702D96D1FC555DD00A9FD11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4702D9761FC555DD00A9FD11 /* JunVisionFaceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4702D9781FC555DD00A9FD11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4702D9811FC555DD00A9FD11 /* JunVisionFaceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4702D9731FC555DD00A9FD11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4702D9591FC555DD00A9FD11 /* JunVisionFace */;
+			targetProxy = 4702D9721FC555DD00A9FD11 /* PBXContainerItemProxy */;
+		};
+		4702D97E1FC555DD00A9FD11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4702D9591FC555DD00A9FD11 /* JunVisionFace */;
+			targetProxy = 4702D97D1FC555DD00A9FD11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4702D9611FC555DD00A9FD11 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4702D9621FC555DD00A9FD11 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4702D9691FC555DD00A9FD11 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4702D96A1FC555DD00A9FD11 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4702D9831FC555DD00A9FD11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4702D9841FC555DD00A9FD11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4702D9861FC555DD00A9FD11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3HG8J7L5X5;
+				INFOPLIST_FILE = JunVisionFace/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ios-tian.JunVisionFace";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4702D9871FC555DD00A9FD11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3HG8J7L5X5;
+				INFOPLIST_FILE = JunVisionFace/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ios-tian.JunVisionFace";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4702D9891FC555DD00A9FD11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JunVisionFaceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ios-tian.JunVisionFaceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JunVisionFace.app/JunVisionFace";
+			};
+			name = Debug;
+		};
+		4702D98A1FC555DD00A9FD11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JunVisionFaceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ios-tian.JunVisionFaceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JunVisionFace.app/JunVisionFace";
+			};
+			name = Release;
+		};
+		4702D98C1FC555DD00A9FD11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JunVisionFaceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ios-tian.JunVisionFaceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JunVisionFace;
+			};
+			name = Debug;
+		};
+		4702D98D1FC555DD00A9FD11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JunVisionFaceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ios-tian.JunVisionFaceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JunVisionFace;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4702D9551FC555DC00A9FD11 /* Build configuration list for PBXProject "JunVisionFace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4702D9831FC555DD00A9FD11 /* Debug */,
+				4702D9841FC555DD00A9FD11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4702D9851FC555DD00A9FD11 /* Build configuration list for PBXNativeTarget "JunVisionFace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4702D9861FC555DD00A9FD11 /* Debug */,
+				4702D9871FC555DD00A9FD11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4702D9881FC555DD00A9FD11 /* Build configuration list for PBXNativeTarget "JunVisionFaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4702D9891FC555DD00A9FD11 /* Debug */,
+				4702D98A1FC555DD00A9FD11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4702D98B1FC555DD00A9FD11 /* Build configuration list for PBXNativeTarget "JunVisionFaceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4702D98C1FC555DD00A9FD11 /* Debug */,
+				4702D98D1FC555DD00A9FD11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4702D9641FC555DD00A9FD11 /* JunVisionFace.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4702D9651FC555DD00A9FD11 /* JunVisionFace.xcdatamodel */,
+			);
+			currentVersion = 4702D9651FC555DD00A9FD11 /* JunVisionFace.xcdatamodel */;
+			path = JunVisionFace.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4702D9521FC555DC00A9FD11 /* Project object */;
+}
