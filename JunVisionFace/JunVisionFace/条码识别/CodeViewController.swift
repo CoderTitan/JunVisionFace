@@ -59,9 +59,22 @@ extension CodeViewController{
         guard let code = barCode as? CIQRCodeDescriptor else { return }
         
         //2.
-        let level = code.errorCorrectionLevel
+        let level = code.errorCorrectionLevel.hashValue
         let version = code.symbolVersion
         let mask = code.maskPattern
-        print("这是二维码信息", level, "---", version, "----", mask)
+        print("这是二维码信息--", level, "---", version, "----", mask)
     }
 }
+
+/*
+ public enum ErrorCorrectionLevel : Int {
+ 
+ case levelL
+ 
+ case levelM
+ 
+ case levelQ
+ 
+ case levelH
+ }
+ */
