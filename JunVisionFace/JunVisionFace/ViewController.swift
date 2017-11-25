@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    fileprivate var titleArr = ["文字识别", "特征识别", "矩形识别", "静态人脸识别", "动态人脸识别", "实时动态添加"]
+    fileprivate var titleArr = ["文字识别", "矩形识别", "条码识别", "人脸特征识别", "静态人脸识别", "动态人脸识别", "实时动态添加"]
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,7 +36,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vcs = [TextViewController(), FeatureViewController(), RectangleViewController(), StaticFaceViewController(), DynamicFaceViewController(), RealAddViewController()]
+        let vcs = [TextViewController(), RectangleViewController(), CodeViewController(), FeatureViewController(), StaticFaceViewController(), DynamicFaceViewController(), RealAddViewController()]
         navigationController?.pushViewController(vcs[indexPath.row], animated: true)
     }
 }

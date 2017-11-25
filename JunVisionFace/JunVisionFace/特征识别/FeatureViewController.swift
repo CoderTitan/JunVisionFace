@@ -26,10 +26,8 @@ class FeatureViewController: BaseViewController {
             guard let faceArr = smallRects as? [FaceFeatureModel] else { return }
             
             //2. 遍历识别的人脸
-            for feature in faceArr{
-                let view = FaceFeatureView(frame: CGRect(x: 0, y: 0, width: self.cleanView.frame.width, height: self.cleanView.frame.height), faceModel: feature)
-                self.cleanView.addSubview(view)
-            }
+            let view = FaceFeatureView(frame: CGRect(x: 0, y: 0, width: self.cleanView.frame.width, height: self.cleanView.frame.height), faceArr: faceArr)
+            self.cleanView.addSubview(view)
         }
     }
 }

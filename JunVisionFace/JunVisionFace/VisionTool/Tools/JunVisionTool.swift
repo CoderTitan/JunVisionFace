@@ -11,9 +11,10 @@ import Vision
 
 enum JunVisionDetectType {
     case text
-    case feature
+    case code
     case rectangle
     case staticFace
+    case feature
     case hotFace
     case realAdd
 }
@@ -47,6 +48,10 @@ extension JunVisionTool {
         case .text:
             baseRequest = VNDetectTextRectanglesRequest(completionHandler: completionHandle)
             baseRequest.setValue(true, forKey: "reportCharacterBoxes") // 设置识别具体文字
+        case .code:
+            let request = VNDetectBarcodesRequest(completionHandler: completionHandle)
+            request.symbologies = VNDetectBarcodesRequest.supportedSymbologies
+            baseRequest = request //设置可识别的条码种类
         case .feature:
             baseRequest = VNDetectFaceLandmarksRequest(completionHandler: completionHandle)
         case .rectangle:
@@ -66,6 +71,8 @@ extension JunVisionTool {
         switch type {
         case .text:
             textDectect(observations, image: image, completionHandle)
+        case .code:
+            codeDectect(observations, image: image, completionHandle)
         case .feature:
             faceFeatureDectect(observations, image: image, completionHandle)
         case .rectangle:
@@ -108,6 +115,25 @@ extension JunVisionTool {
         
         //4. 回调结果
         complecHandle(bigRects, smallRects)
+    }
+    
+    /// 条码识别
+    fileprivate func codeDectect(_ observations: [Any]?, image: UIImage, _ complecHandle: JunDetectHandle){
+        //1. 获取识别到的VNRectangleObservation
+        guard let boxArr = observations as? [VNBarcodeObservation] else { return }
+        //2. 创建rect数组
+        var bigRects = [CGRect](), codeArr = [CodeModel]()
+        //3. 遍历识别结果
+        for boxObj in boxArr {
+            // 3.1 获取识别到的位置
+            bigRects.append(convertRect(boxObj.boundingBox, image))
+            
+            //3.2 获取每一个条码的信息
+            codeArr.append(CodeModel(code: boxObj))
+        }
+        //4. 回调结果
+        complecHandle(bigRects, codeArr)
+
     }
     
     /// 特征识别
@@ -201,3 +227,15 @@ extension JunVisionTool{
         return keyArr
     }
 }
+
+
+
+/*
+
+ 
+ 
+ 
+ 
+ 
+ 
+ */
