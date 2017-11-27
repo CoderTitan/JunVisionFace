@@ -58,15 +58,17 @@ extension CodeViewController{
         //1. 转成对应的条码对象
         guard let code = barCode as? CIQRCodeDescriptor else { return }
         
-        //2.
+        //2. 解读条码信息
         let level = code.errorCorrectionLevel.hashValue
         let version = code.symbolVersion
         let mask = code.maskPattern
-        print("这是二维码信息--", level, "---", version, "----", mask)
+        let data = code.errorCorrectedPayload
+        let dataStr = String(data: data, encoding: .utf8)
+        print("这是二维码信息--", level, "---", version, "----", mask, "---", dataStr ?? "")
     }
 }
 
-/*
+/* 纠错等级
  public enum ErrorCorrectionLevel : Int {
  
  case levelL

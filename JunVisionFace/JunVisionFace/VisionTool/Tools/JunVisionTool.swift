@@ -200,32 +200,7 @@ extension JunVisionTool{
         //该Y坐标与UIView的Y坐标是相反的
         let y = (1 - rectangleRect.minY) * imageSize.height - h
         return CGRect(x: x, y: y, width: w, height: h)
-    }
-    
-    //runtime获取对象属性
-    fileprivate func getAllKeys(anyClass: AnyClass, _ callBack: @escaping ((_ key: String?) -> ())) -> [String] {
-        var keyArr = [String]()
-        
-        //1. runtime获取
-        var count: UInt32 = 0
-        
-        //1.1 获取所有属性
-        guard let propertyArr = class_copyPropertyList(anyClass.self, &count) else { return [] }
-        
-        //1.2 遍历所有属性
-        for i in 0..<count {
-            let property = propertyArr[Int(i)]
-            
-            //1.3获取属性名
-            let keyStr = String(cString: property_getName(property))
-            keyArr.append(keyStr)
-            
-            //1.4 回调
-            callBack(keyStr)
-        }
-        
-        return keyArr
-    }
+    }    
 }
 
 

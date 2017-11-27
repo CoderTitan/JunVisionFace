@@ -46,8 +46,7 @@ class FaceFeatureView: UIView {
                     let point = landmark2D.normalizedPoints[i]
                     let rectWidth = frame.width * faceRect.width
                     let rectHeight = frame.height * faceRect.height
-                    
-                    let tempPoint = CGPoint(x: point.x * rectWidth + faceRect.minX * frame.width, y: point.y * rectHeight + faceRect.minY * frame.height)
+                    let tempPoint = CGPoint(x: point.x * rectWidth + faceRect.minX * frame.width, y: frame.height - (point.y * rectHeight + faceRect.minY * frame.height))
                     pointArr.append(tempPoint)
                 }
                 
@@ -55,29 +54,24 @@ class FaceFeatureView: UIView {
                 let content = UIGraphicsGetCurrentContext()
                 
                 //5.2 设置填充颜色(setStroke设置描边颜色)
-                UIColor.red.set()
+                UIColor.green.set()
                 
                 //5.3 设置宽度
                 content?.setLineWidth(2)
                 
-                //5.4. 设置翻转
-                
-                content?.translateBy(x: 0, y: frame.height)
-                content?.scaleBy(x: 1.0, y: -1.0)
-                
-                //5.5. 设置线的类型(连接处)
+                //5.4. 设置线的类型(连接处)
                 content?.setLineJoin(.round)
                 content?.setLineCap(.round)
                 
-                //5.6. 设置抗锯齿
+                //5.5. 设置抗锯齿
                 content?.setShouldAntialias(true)
                 content?.setAllowsAntialiasing(true)
                 
-                //5.7 开始绘制
+                //5.6 开始绘制
                 content?.addLines(between: pointArr)
                 content?.drawPath(using: .stroke)
                 
-                //5.8 结束绘制
+                //5.7 结束绘制
                 content?.strokePath()
             }
         }
