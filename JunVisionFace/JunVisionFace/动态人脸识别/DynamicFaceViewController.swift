@@ -7,29 +7,41 @@
 //
 
 import UIKit
+import AVFoundation
+import Vision
 
-class DynamicFaceViewController: UIViewController {
+class DynamicFaceViewController: ScanBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        title = "动态人脸识别"
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+//处理扫描结果
+extension DynamicFaceViewController{
+    func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+        //0. 清除所有红框
+        for subView in cleanView.subviews {
+            subView.removeFromSuperview()
+        }
+        
+        //1. 获取CVPixelBuffer对象
+        guard let cvBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
+        guard let input = self.deviceInput else { return }
+        
+        //2. 获取扫描结果
+        visionTool.visionScan(type: .hotFace, scanRect: previewLayer.bounds, pixelBuffer: cvBuffer) { (bigArr, smallArr) in
+            //2.1. 识别到的大区域
+            if let rectArray = bigArr {
+                for textRect in rectArray{
+                    DispatchQueue.main.async {
+                        self.cleanView.addSubview(viewTool.addRectangleView(rect: textRect, input.device.position))
+                    }
+                }
+            }
+        }
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -20,11 +20,10 @@
 		4702D9A21FC69CD300A9FD11 /* RectangleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702D9A01FC69CD300A9FD11 /* RectangleViewController.swift */; };
 		4702D9A61FC69CFB00A9FD11 /* StaticFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702D9A41FC69CFB00A9FD11 /* StaticFaceViewController.swift */; };
 		4702D9AA1FC69D2200A9FD11 /* DynamicFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702D9A81FC69D2200A9FD11 /* DynamicFaceViewController.swift */; };
-		4702D9AB1FC69D2200A9FD11 /* DynamicFaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4702D9A91FC69D2200A9FD11 /* DynamicFaceViewController.xib */; };
 		4702D9AE1FC69D5800A9FD11 /* RealAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702D9AC1FC69D5800A9FD11 /* RealAddViewController.swift */; };
-		4702D9AF1FC69D5800A9FD11 /* RealAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4702D9AD1FC69D5800A9FD11 /* RealAddViewController.xib */; };
-		4702D9B41FC6A40F00A9FD11 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702D9B31FC6A40F00A9FD11 /* BaseViewController.swift */; };
 		4702D9B61FC6AD1900A9FD11 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702D9B51FC6AD1900A9FD11 /* UIExtension.swift */; };
+		470904631FCBB954009D86B0 /* DectectBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470904621FCBB954009D86B0 /* DectectBaseViewController.swift */; };
+		470904651FCBB95E009D86B0 /* ScanBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470904641FCBB95E009D86B0 /* ScanBaseViewController.swift */; };
 		47EDDF921FC7C1C20080EA4B /* JunVisionTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDDF911FC7C1C20080EA4B /* JunVisionTool.swift */; };
 		47EDDF941FC906BF0080EA4B /* FaceFeatureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDDF931FC906BF0080EA4B /* FaceFeatureModel.swift */; };
 		47EDDF961FC911E90080EA4B /* JunViewTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDDF951FC911E90080EA4B /* JunViewTool.swift */; };
@@ -71,11 +70,10 @@
 		4702D9A01FC69CD300A9FD11 /* RectangleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleViewController.swift; sourceTree = "<group>"; };
 		4702D9A41FC69CFB00A9FD11 /* StaticFaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFaceViewController.swift; sourceTree = "<group>"; };
 		4702D9A81FC69D2200A9FD11 /* DynamicFaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFaceViewController.swift; sourceTree = "<group>"; };
-		4702D9A91FC69D2200A9FD11 /* DynamicFaceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicFaceViewController.xib; sourceTree = "<group>"; };
 		4702D9AC1FC69D5800A9FD11 /* RealAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealAddViewController.swift; sourceTree = "<group>"; };
-		4702D9AD1FC69D5800A9FD11 /* RealAddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealAddViewController.xib; sourceTree = "<group>"; };
-		4702D9B31FC6A40F00A9FD11 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		4702D9B51FC6AD1900A9FD11 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		470904621FCBB954009D86B0 /* DectectBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DectectBaseViewController.swift; sourceTree = "<group>"; };
+		470904641FCBB95E009D86B0 /* ScanBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanBaseViewController.swift; sourceTree = "<group>"; };
 		47EDDF911FC7C1C20080EA4B /* JunVisionTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JunVisionTool.swift; sourceTree = "<group>"; };
 		47EDDF931FC906BF0080EA4B /* FaceFeatureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceFeatureModel.swift; sourceTree = "<group>"; };
 		47EDDF951FC911E90080EA4B /* JunViewTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JunViewTool.swift; sourceTree = "<group>"; };
@@ -190,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				4702D9A81FC69D2200A9FD11 /* DynamicFaceViewController.swift */,
-				4702D9A91FC69D2200A9FD11 /* DynamicFaceViewController.xib */,
 			);
 			path = "动态人脸识别";
 			sourceTree = "<group>";
@@ -215,7 +212,6 @@
 			isa = PBXGroup;
 			children = (
 				4702D9AC1FC69D5800A9FD11 /* RealAddViewController.swift */,
-				4702D9AD1FC69D5800A9FD11 /* RealAddViewController.xib */,
 			);
 			path = "实时动态添加";
 			sourceTree = "<group>";
@@ -242,7 +238,8 @@
 		4702D9B11FC6A40200A9FD11 /* BaseVIewController */ = {
 			isa = PBXGroup;
 			children = (
-				4702D9B31FC6A40F00A9FD11 /* BaseViewController.swift */,
+				470904621FCBB954009D86B0 /* DectectBaseViewController.swift */,
+				470904641FCBB95E009D86B0 /* ScanBaseViewController.swift */,
 			);
 			path = BaseVIewController;
 			sourceTree = "<group>";
@@ -373,8 +370,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4702D9AB1FC69D2200A9FD11 /* DynamicFaceViewController.xib in Resources */,
-				4702D9AF1FC69D5800A9FD11 /* RealAddViewController.xib in Resources */,
 				4702D96B1FC555DD00A9FD11 /* LaunchScreen.storyboard in Resources */,
 				4702D9681FC555DD00A9FD11 /* Assets.xcassets in Resources */,
 				4702D9631FC555DD00A9FD11 /* Main.storyboard in Resources */,
@@ -402,13 +397,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				470904631FCBB954009D86B0 /* DectectBaseViewController.swift in Sources */,
 				4702D9661FC555DD00A9FD11 /* JunVisionFace.xcdatamodeld in Sources */,
 				4702D9601FC555DD00A9FD11 /* ViewController.swift in Sources */,
 				4702D9AE1FC69D5800A9FD11 /* RealAddViewController.swift in Sources */,
 				4702D99E1FC69CB200A9FD11 /* FeatureViewController.swift in Sources */,
 				4702D95E1FC555DD00A9FD11 /* AppDelegate.swift in Sources */,
 				47EDDF921FC7C1C20080EA4B /* JunVisionTool.swift in Sources */,
-				4702D9B41FC6A40F00A9FD11 /* BaseViewController.swift in Sources */,
 				4702D9A21FC69CD300A9FD11 /* RectangleViewController.swift in Sources */,
 				47EDDF981FC95BA90080EA4B /* FaceFeatureView.swift in Sources */,
 				4702D9AA1FC69D2200A9FD11 /* DynamicFaceViewController.swift in Sources */,
@@ -416,6 +411,7 @@
 				47EDDF961FC911E90080EA4B /* JunViewTool.swift in Sources */,
 				4702D9B61FC6AD1900A9FD11 /* UIExtension.swift in Sources */,
 				47EDDF9B1FC98EBD0080EA4B /* CodeViewController.swift in Sources */,
+				470904651FCBB95E009D86B0 /* ScanBaseViewController.swift in Sources */,
 				47EDDF9D1FC991020080EA4B /* CodeModel.swift in Sources */,
 				47EDDF941FC906BF0080EA4B /* FaceFeatureModel.swift in Sources */,
 				4702D9A61FC69CFB00A9FD11 /* StaticFaceViewController.swift in Sources */,

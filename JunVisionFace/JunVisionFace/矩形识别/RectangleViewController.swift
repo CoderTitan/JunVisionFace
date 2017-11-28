@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RectangleViewController: BaseViewController {
+class RectangleViewController: DectectBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

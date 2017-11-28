@@ -9,7 +9,7 @@
 import UIKit
 import Vision
 
-class FeatureViewController: BaseViewController {
+class FeatureViewController: DectectBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -37,6 +37,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vcs = [TextViewController(), RectangleViewController(), CodeViewController(), FeatureViewController(), StaticFaceViewController(), DynamicFaceViewController(), RealAddViewController()]
-        navigationController?.pushViewController(vcs[indexPath.row], animated: true)
+        let vc = vcs[indexPath.row]
+        vc.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

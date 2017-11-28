@@ -1,15 +1,14 @@
 //
-//  BaseViewController.swift
+//  DectectBaseViewController.swift
 //  JunVisionFace
 //
-//  Created by iOS_Tian on 2017/11/23.
+//  Created by iOS_Tian on 2017/11/27.
 //  Copyright © 2017年 CoderJun. All rights reserved.
 //
 
 import UIKit
 
-
-class BaseViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class DectectBaseViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     ///相册选择的图片
     var selectorImage: UIImage?
@@ -24,7 +23,7 @@ class BaseViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setupVIews()
     }
     
@@ -80,8 +79,8 @@ class BaseViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 }
 
 
-//MARK: 添加透明view
-extension BaseViewController{
+//MARK: 界面处理
+extension DectectBaseViewController{
     fileprivate func addButton(title: String, rect: CGRect, action: Selector) -> UIButton{
         let button = UIButton(type: .custom)
         button.frame = rect

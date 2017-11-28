@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TextViewController: BaseViewController {
+class TextViewController: DectectBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

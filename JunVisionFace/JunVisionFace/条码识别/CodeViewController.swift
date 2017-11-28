@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CodeViewController: BaseViewController {
+class CodeViewController: DectectBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

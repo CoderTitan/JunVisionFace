@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StaticFaceViewController: BaseViewController {
+class StaticFaceViewController: DectectBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
