@@ -9,6 +9,9 @@
 - 实时动态添加
 - 对象检测和跟踪
 
+##### 简书地址: [Swift之Vision 图像识别框架](http://www.jianshu.com/p/08174663d2e9)
+##### CSDN博客地址: [Swift之Vision 图像识别框架](http://blog.csdn.net/ShmilyCoder/article/details/78667041)
+
 
 # Swift之Vision 图像识别框架
 
@@ -583,3 +586,11 @@ self.redView.frame = convertRect
   - 文中相关介绍有的地方如果有不是很详细或者有更好建议的,欢迎联系小编
   - 如果方便的话, 还望star一下
 
+
+---
+
+### 其他相关文章
+- [Swift之二维码的生成、识别和扫描](http://www.jianshu.com/p/0a30d1af8335)
+- [iOS黑科技之(CoreImage)静态人脸识别(一)](http://www.jianshu.com/p/168007f6f8b4)
+- [iOS黑科技之(AVFoundation)动态人脸识别(二)](http://www.jianshu.com/p/5e624dc68a64)
+- [Swift之Vision 图像识别框架](http://www.jianshu.com/p/08174663d2e9)
