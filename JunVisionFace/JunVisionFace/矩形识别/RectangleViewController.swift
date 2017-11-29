@@ -28,7 +28,9 @@ extension RectangleViewController{
             //2. 识别到的大区域
             guard let rectArr = bigRects else { return }
             for textRect in rectArr{
-                self.cleanView.addSubview(viewTool.addRectangleView(rect: textRect))
+                DispatchQueue.main.async {   
+                    self.cleanView.addSubview(viewTool.addRectangleView(rect: textRect))
+                }
             }
         }
     }

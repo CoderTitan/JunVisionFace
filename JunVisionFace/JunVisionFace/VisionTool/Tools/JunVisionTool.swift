@@ -297,7 +297,7 @@ extension JunVisionTool{
         let h = rectangleRect.height * size.height
         let x = rectangleRect.minX * size.width
         //该Y坐标与UIView的Y坐标是相反的
-        let y = (1 - rectangleRect.minY) * size.height - h
+        let y = (1 - rectangleRect.maxY) * size.height
         return CGRect(x: x, y: y, width: w, height: h)
     }
     

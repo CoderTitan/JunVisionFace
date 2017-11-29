@@ -32,7 +32,9 @@ class TextViewController: DectectBaseViewController {
             //3. 识别到的小区域
             guard let smallArr = smallRects as? [CGRect] else { return }
             for textRect in smallArr{
-                self.cleanView.addSubview(viewTool.addRectangleView(rect: textRect))
+                DispatchQueue.main.async {   
+                    self.cleanView.addSubview(viewTool.addRectangleView(rect: textRect))
+                }
             }
         }
 

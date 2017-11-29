@@ -23,18 +23,20 @@ extension CodeViewController{
         
         guard let image = selectorImage else { return }
         visionTool.visionDetectImage(type: .code, image: image) { (rectArr, dataArr) in
-            //1. 识别到的大区域
-            if let rectArray = rectArr {
-                for textRect in rectArray{
-                    self.cleanView.addSubview(viewTool.addRectangleView(rect: textRect))
+            DispatchQueue.main.async {
+                //1. 识别到的大区域
+                if let rectArray = rectArr {
+                    for textRect in rectArray{
+                        self.cleanView.addSubview(viewTool.addRectangleView(rect: textRect))
+                    }
                 }
-            }
-            
-            //2. 识别到的条码信息
-            guard let codeArr = dataArr as? [CodeModel] else { return }
-            for code in codeArr{
-                print(code.payloadStringValue ?? "")
-                self.handleCodeInfo(code: code)
+                
+                //2. 识别到的条码信息
+                guard let codeArr = dataArr as? [CodeModel] else { return }
+                for code in codeArr{
+                    print(code.payloadStringValue ?? "")
+                    self.handleCodeInfo(code: code)
+                }
             }
         }
     }

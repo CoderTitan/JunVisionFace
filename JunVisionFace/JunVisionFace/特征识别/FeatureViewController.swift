@@ -26,8 +26,10 @@ class FeatureViewController: DectectBaseViewController {
             guard let faceArr = smallRects as? [FaceFeatureModel] else { return }
             
             //2. 遍历识别的人脸
-            let view = FaceFeatureView(frame: CGRect(x: 0, y: 0, width: self.cleanView.frame.width, height: self.cleanView.frame.height), faceArr: faceArr)
-            self.cleanView.addSubview(view)
+            DispatchQueue.main.async {            
+                let view = FaceFeatureView(frame: CGRect(x: 0, y: 0, width: self.cleanView.frame.width, height: self.cleanView.frame.height), faceArr: faceArr)
+                self.cleanView.addSubview(view)
+            }
         }
     }
 }
