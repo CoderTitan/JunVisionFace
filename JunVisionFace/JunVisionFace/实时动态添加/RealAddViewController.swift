@@ -17,7 +17,6 @@ class RealAddViewController: ScanBaseViewController {
 
         title = "实时动态添加"
     }
-
 }
 
 //处理扫描结果

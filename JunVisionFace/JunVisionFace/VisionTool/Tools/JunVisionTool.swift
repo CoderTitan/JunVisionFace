@@ -291,13 +291,23 @@ extension JunVisionTool{
     }
     
     /// rect坐标转换
-    fileprivate func convertRect(_ rectangleRect: CGRect, _ rect: CGRect) -> CGRect {
+    func convertRect(_ rectangleRect: CGRect, _ rect: CGRect) -> CGRect {
         let size = rect.size
         let w = rectangleRect.width * size.width
         let h = rectangleRect.height * size.height
         let x = rectangleRect.minX * size.width
         //该Y坐标与UIView的Y坐标是相反的
         let y = (1 - rectangleRect.minY) * size.height - h
+        return CGRect(x: x, y: y, width: w, height: h)
+    }
+    
+    /// 正常坐标转成layer坐标
+    func convertRect(viewRect: CGRect, layerRect: CGRect) -> CGRect{
+        let size = layerRect.size
+        let w = viewRect.width / size.width
+        let h = viewRect.height / size.height
+        let x = viewRect.minX / size.width
+        let y = 1 - viewRect.maxY / size.height
         return CGRect(x: x, y: y, width: w, height: h)
     }
 }

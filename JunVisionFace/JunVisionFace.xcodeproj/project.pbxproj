@@ -24,6 +24,7 @@
 		4702D9B61FC6AD1900A9FD11 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702D9B51FC6AD1900A9FD11 /* UIExtension.swift */; };
 		470904631FCBB954009D86B0 /* DectectBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470904621FCBB954009D86B0 /* DectectBaseViewController.swift */; };
 		470904651FCBB95E009D86B0 /* ScanBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470904641FCBB95E009D86B0 /* ScanBaseViewController.swift */; };
+		47EB9AC81FCD7AD300806487 /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EB9AC71FCD7AD300806487 /* TrackViewController.swift */; };
 		47EDDF921FC7C1C20080EA4B /* JunVisionTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDDF911FC7C1C20080EA4B /* JunVisionTool.swift */; };
 		47EDDF941FC906BF0080EA4B /* FaceFeatureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDDF931FC906BF0080EA4B /* FaceFeatureModel.swift */; };
 		47EDDF961FC911E90080EA4B /* JunViewTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDDF951FC911E90080EA4B /* JunViewTool.swift */; };
@@ -74,6 +75,7 @@
 		4702D9B51FC6AD1900A9FD11 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 		470904621FCBB954009D86B0 /* DectectBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DectectBaseViewController.swift; sourceTree = "<group>"; };
 		470904641FCBB95E009D86B0 /* ScanBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanBaseViewController.swift; sourceTree = "<group>"; };
+		47EB9AC71FCD7AD300806487 /* TrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
 		47EDDF911FC7C1C20080EA4B /* JunVisionTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JunVisionTool.swift; sourceTree = "<group>"; };
 		47EDDF931FC906BF0080EA4B /* FaceFeatureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceFeatureModel.swift; sourceTree = "<group>"; };
 		47EDDF951FC911E90080EA4B /* JunViewTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JunViewTool.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				4702D9951FC69C6F00A9FD11 /* 矩形识别 */,
 				4702D9961FC69C6F00A9FD11 /* 实时动态添加 */,
 				4702D9971FC69C6F00A9FD11 /* 特征识别 */,
+				47EB9AC61FCD7A9C00806487 /* 对象检测和跟踪 */,
 				4702D9921FC69C6F00A9FD11 /* 文字识别 */,
 				4702D95D1FC555DD00A9FD11 /* AppDelegate.swift */,
 				4702D95F1FC555DD00A9FD11 /* ViewController.swift */,
@@ -252,6 +255,14 @@
 				47EDDF951FC911E90080EA4B /* JunViewTool.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		47EB9AC61FCD7A9C00806487 /* 对象检测和跟踪 */ = {
+			isa = PBXGroup;
+			children = (
+				47EB9AC71FCD7AD300806487 /* TrackViewController.swift */,
+			);
+			path = "对象检测和跟踪";
 			sourceTree = "<group>";
 		};
 		47EDDF991FC98EA00080EA4B /* 条码识别 */ = {
@@ -415,6 +426,7 @@
 				47EDDF9D1FC991020080EA4B /* CodeModel.swift in Sources */,
 				47EDDF941FC906BF0080EA4B /* FaceFeatureModel.swift in Sources */,
 				4702D9A61FC69CFB00A9FD11 /* StaticFaceViewController.swift in Sources */,
+				47EB9AC81FCD7AD300806487 /* TrackViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
