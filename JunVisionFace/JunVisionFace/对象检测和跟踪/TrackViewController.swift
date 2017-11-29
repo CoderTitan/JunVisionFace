@@ -12,8 +12,6 @@ import Vision
 
 class TrackViewController: ScanBaseViewController {
 
-    /// 处理与多个图像序列的请求
-    fileprivate let sequenceHandle = VNSequenceRequestHandler()
     fileprivate let redView = viewTool.addRectangleView(rect: CGRect.zero)
     fileprivate var lastObservation: VNDetectedObjectObservation?
     
@@ -60,22 +58,27 @@ extension TrackViewController{
               let lastObservation = self.lastObservation
         else { return }
         
-        //2. 创建回调
+        //2. 处理与多个图像序列的请求
+        let sequenceHandle = VNSequenceRequestHandler()
+        
+        //3. 创建回调
         let completionHandle: VNRequestCompletionHandler = { request, error in
             let observations = request.results
             self.handleVisionRequestUpdate(observations: observations)
         }
         
-        //2. 创建跟踪识别请求
+        //4. 创建跟踪识别请求
         let trackRequest = VNTrackObjectRequest(detectedObjectObservation: lastObservation, completionHandler: completionHandle)
         //将精度设置为高
         trackRequest.trackingLevel = .accurate
         
-        //3. 发送请求
-        do{
-            try sequenceHandle.perform([trackRequest], on: cvBuffer)
-        }catch{
-            print("Throws: \(error)")
+        //5. 发送请求
+        DispatchQueue.global().async {
+            do{
+                try sequenceHandle.perform([trackRequest], on: cvBuffer)
+            }catch{
+                print("Throws: \(error)")
+            }
         }
     }
     
