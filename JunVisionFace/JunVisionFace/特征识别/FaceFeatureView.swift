@@ -63,7 +63,7 @@ class FaceFeatureView: UIView {
                 content?.setLineJoin(.round)
                 content?.setLineCap(.round)
                 
-                //5.5. 设置抗锯齿
+                //5.5. 设置抗锯齿效果
                 content?.setShouldAntialias(true)
                 content?.setAllowsAntialiasing(true)
                 

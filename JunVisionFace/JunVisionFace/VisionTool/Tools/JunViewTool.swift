@@ -22,7 +22,7 @@ extension JunViewTool{
         let boxView = UIView(frame: CGRect(x: x, y: rect.minY, width: rect.width, height: rect.height))
         boxView.backgroundColor = UIColor.clear
         boxView.layer.borderColor = UIColor.red.cgColor
-        boxView.layer.borderWidth = 1.5
+        boxView.layer.borderWidth = 2
         return boxView
     }
     

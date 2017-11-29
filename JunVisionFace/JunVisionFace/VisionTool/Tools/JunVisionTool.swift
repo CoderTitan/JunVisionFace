@@ -48,7 +48,8 @@ extension JunVisionTool {
         switch type {
         case .text:
             baseRequest = VNDetectTextRectanglesRequest(completionHandler: completionHandle)
-            baseRequest.setValue(true, forKey: "reportCharacterBoxes") // 设置识别具体文字
+            // 设置识别具体文字
+            baseRequest.setValue(true, forKey: "reportCharacterBoxes")
         case .code:
             let request = VNDetectBarcodesRequest(completionHandler: completionHandle)
             request.symbologies = VNDetectBarcodesRequest.supportedSymbologies
