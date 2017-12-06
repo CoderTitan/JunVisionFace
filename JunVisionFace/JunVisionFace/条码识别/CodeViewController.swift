@@ -21,18 +21,18 @@ extension CodeViewController{
     override func startRecognitionAction(_ sender: Any) {
         super.startRecognitionAction(sender)
         
-        guard let image = selectorImage else { return }
+        guard let image = selectorImage else { "未获取到图片".show(); return }
+        
         visionTool.visionDetectImage(type: .code, image: image) { (rectArr, dataArr) in
             DispatchQueue.main.async {
                 //1. 识别到的大区域
-                if let rectArray = rectArr {
-                    for textRect in rectArray{
-                        self.cleanView.addSubview(viewTool.addRectangleView(rect: textRect))
-                    }
+                guard let rectArray = rectArr else { "未识别到条码".show(); return }
+                for textRect in rectArray{
+                    self.cleanView.addSubview(viewTool.addRectangleView(rect: textRect))
                 }
                 
                 //2. 识别到的条码信息
-                guard let codeArr = dataArr as? [CodeModel] else { return }
+                guard let codeArr = dataArr as? [CodeModel] else { "未识别到条码信息".show(); return }
                 for code in codeArr{
                     print(code.payloadStringValue ?? "")
                     self.handleCodeInfo(code: code)

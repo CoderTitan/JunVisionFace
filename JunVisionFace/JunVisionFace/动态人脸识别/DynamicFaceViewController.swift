@@ -29,7 +29,7 @@ extension DynamicFaceViewController{
         
         //1. 获取CVPixelBuffer对象
         guard let cvBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
-        guard let input = self.deviceInput else { return }
+        guard let input = self.deviceInput else { "获取设备失败".show(); return }
         
         //2. 获取扫描结果
         visionTool.visionScan(type: .hotFace, scanRect: previewLayer.bounds, pixelBuffer: cvBuffer) { (bigArr, smallArr) in
